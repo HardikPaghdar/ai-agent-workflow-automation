@@ -59,7 +59,7 @@ def plan_goal(goal: str) -> tuple[list[dict[str, Any]], bool]:
     steps: list[dict[str, Any]] = []
     if any(word in text for word in ["maintenance", "restart", "checklist", "manual", "knowledge", "look up", "lookup"]):
         steps.append({"tool": "knowledge_lookup", "input": {"query": goal}, "status": "pending"})
-    match = re.search(r"(?:calculate|compute)s+([0-9+-*/(). ]{1,80})", goal, re.I)
+    match = re.search(r"(?:calculate|compute)\s+([0-9+*/(). -]{1,80})", goal, re.I)
     if match:
         steps.append({"tool": "calculator", "input": {"expression": match.group(1).strip()}, "status": "pending"})
     if any(word in text for word in ["email", "draft", "summarize", "summary"]):
