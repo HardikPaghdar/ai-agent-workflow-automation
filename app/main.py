@@ -76,7 +76,7 @@ def run_tool(name: str, payload: dict[str, Any]) -> dict[str, Any]:
     if name == "knowledge_lookup":
         query = str(payload.get("query", "")).lower()
         passages = [
-            {"source": "maintenance-guide.md", "text": "Notify operators, confirm safe state, follow lockout/tagout, check the emergency stop and fault code. Escalate recurring faults."},
+            {"source": "maintenance-guide.md", "text": "Maintenance restart checklist: before restarting a machine, notify operators, confirm safe state, follow lockout/tagout, check the emergency stop and fault code. Escalate recurring faults."},
             {"source": "support-faq.md", "text": "Do not request passwords or one-time codes. Escalate security concerns and unresolved outages to a human team."},
         ]
         terms = set(re.findall(r"[a-z0-9]{3,}", query))
