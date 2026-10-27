@@ -79,3 +79,10 @@ docker run --rm -p 8000:8000 ai-agent-workflow-automation
 
 ## License
 MIT — see [LICENSE](LICENSE).
+
+## Explore more
+
+- [MCP AI Developer Assistant](https://github.com/HardikPaghdar/mcp-ai-developer-assistant) — read-only repository inspection tools.
+- [MCP Server Developer Toolkit](https://github.com/HardikPaghdar/mcp-server-developer-toolkit) — permission-aware tools for AI clients.
+- [Multi-Agent Software Engineer](https://github.com/HardikPaghdar/multi-agent-software-engineer) — human-supervised task planning.
+- [More projects on my portfolio](https://hardikpaghdar.netlify.app/).
